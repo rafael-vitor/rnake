@@ -6,7 +6,7 @@ class Arrow extends PureComponent {
     const { direction } = this.props;
     return (
       <View>
-        <Text>Arrow {direction} </Text>
+        <Text style={{ fontSize: 30, left: 30, top: 300 }}>Arrow {direction} </Text>
       </View>
     );
   }
