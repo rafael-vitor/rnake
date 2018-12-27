@@ -1,7 +1,6 @@
 import React from 'react';
 import { AppRegistry, StatusBar, StyleSheet, Text, View, Dimensions } from 'react-native';
 import { GameEngine } from "react-native-game-engine";
-import { Finger } from "./finger";
 import { Square } from "./square";
 import { MoveFinger } from "./systems";
 import { Arrow } from './arrow';
@@ -16,7 +15,6 @@ export default class App extends React.Component {
         style={styles.container}
         systems={[MoveFinger]}
         entities={{
-          1: { position: [40,  200], renderer: <Finger />},
           2: { direction: '', renderer: <Arrow />},
           3: { position: [width/2, height/2], renderer: <Square />},
         }}>
